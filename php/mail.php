@@ -22,8 +22,8 @@
         //Recipients
         $mail->setFrom('silverfercam.info@gmail.com', 'David Fernandez');
         $mail->addAddress('davidfercam69@gmail.com');               //Add a recipient                
-
-        $pdf = "../uploads/test.pdf";
+        
+        $pdf = "../uploads/datosCuestionario.pdf";
 
         //Attachments        
         $mail->addAttachment($pdf);        //Optional name
