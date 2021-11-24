@@ -18,7 +18,7 @@
 <body>
     <div class="barra">
         <a href="https://silver-storm.com/"><img src="img/SilverLogo5.png" class="logo"></a>
-        <a class="derecha">Bridge Quick Scan</a>
+        <a class="derecha">Digital Tranformation Roadmap Quick Scan</a>
     </div>
     <div id="graph" class="grafico">
         <canvas id="myChart" width="400" height="400" position="relative"></canvas>
@@ -344,7 +344,7 @@
                     <input type="radio" id="p20-3" name="p20" value="5">
                     <label for="p20-3">My team actively applies improvement methodologies on a regular basis (e.g. weekly basis). We strive to develop a culture of continuous improvement.</label>
                 </div>
-            </div>            
+            </div>
         </form>
         <div class="botones">
             <input type="button" class="boton" id="back" value="Back">
