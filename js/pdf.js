@@ -242,20 +242,8 @@ document.getElementById("pdf").addEventListener("click",function(){
                 success: function(data){console.log(data)},
                 error: function(data){console.log(data)}
             });
-         
-         /*
-         var pdf = btoa(doc.output()); 
-         $.ajax({
-            method: "POST",
-            url: "php/upload.php",
-            data: {data: pdf},
-         }).done(function(data){
-            console.log(data);
-         }); */
 
          doc.save('DatosCuestionario.pdf');
-
-         /*var pdfBase64 = doc.output('datauristring');      */  
 
          window.location = "php/mail.php";
 
