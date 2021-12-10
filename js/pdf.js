@@ -230,36 +230,20 @@ document.getElementById("pdf").addEventListener("click",function(){
 
          var blob = doc.output('blob');
 
-            var formData = new FormData();
-            formData.append('pdf', blob);
+         var formData = new FormData();
+         formData.append('pdf', blob);         
 
-            /*$.ajax({
-               url: 'php/delete_file.php',
-               data: {'file' :  'uploads/datosCuestionario.pdf'},
-               method: 'GET',/*
-               /*success: function (response) {
-                  alert('Deleted!');
-     
-               },
-               error: function () {
-                  alert('Not Deleted!');
-               }*//*
-            });*/
-
-            $.ajax('php/upload.php',
-            {
-                method: 'POST',
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function(data){console.log(data)},
-                error: function(data){console.log(data)}
-            });
+         $.ajax('php/upload.php',
+         {
+            method: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(data){console.log(data)},
+            error: function(data){console.log(data)}
+         });
 
          doc.save('DatosCuestionario.pdf');
-
-         window.location = "php/mail.php";
-
       }
    });
 });
